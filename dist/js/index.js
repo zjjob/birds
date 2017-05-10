@@ -1,15 +1,15 @@
 $(function(){
     var arr=['dist/img/banner01_bg.jpg',"dist/img/banner02_bg.jpg",'dist/img/banner01_bg.jpg'];
     var index=0;
-     var a=setInterval(function(){
-        if(index>arr.length-1){
-            index=0;
-        }
-        change();
-        index++;
-    },2000)
+    //  var a=setInterval(function(){
+    //     if(index>arr.length-1){
+    //         index=0;
+    //     }
+    //     change();
+    //     index++;
+    // },2000)
     $(".banner .btnGroup .btnGroupCount .left").click(function(){
-        clearInterval(a);
+        // clearInterval(a);
        index--;
        if(index<0){
            index=arr.length-1;
@@ -56,11 +56,11 @@ $(function(){
     //设置第一幅图的样式
     function img1play(){
         hideimg();
+        $(".banner .img1").stop();
+        $(".banner .img2").stop();
         $(".banner .img1").show();
         $(".banner .img2").show();
         $(".banner .img3").show();
-        $(".banner .img1").stop();
-        $(".banner .img2").stop();
         $(".banner .img1").animate({'left':'600px'},1000);
         $(".banner .img2").animate({'right':'400px'},1000);
     }
@@ -77,6 +77,8 @@ $(function(){
     }
     //设置第三幅图的样式
     function img3play(){
+        $(".banner .img7").stop();
+        $(".banner .img8").stop();
         $(".banner .img7").show();
         $(".banner .img8").show();
         $(".banner .img9").show();
@@ -95,5 +97,5 @@ $(function(){
         $(".banner .img8").hide();
         $(".banner .img9").hide();
     }
-    img1play()
+    img1play();
 });
