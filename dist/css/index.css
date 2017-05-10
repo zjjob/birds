@@ -471,19 +471,56 @@ template {
 .banner .img1 {
   display: inline-block;
   position: absolute;
-  top: 0;
+  top: 160px;
+  left: 0;
 }
 .banner .img2 {
   display: inline-block;
   position: absolute;
-  top: 0;
+  top: 250px;
   right: 0;
 }
 .banner .img3 {
   display: inline-block;
   position: absolute;
-  top: 0;
-  left: 50px;
+  top: 300px;
+  left: 630px;
+}
+.banner .img4 {
+  display: inline-block;
+  position: absolute;
+  top: 180px;
+  left: 0px;
+}
+.banner .img5 {
+  display: inline-block;
+  position: absolute;
+  top: 200px;
+  left: 513px;
+}
+.banner .img6 {
+  display: inline-block;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+.banner .img7 {
+  display: inline-block;
+  position: absolute;
+  top: 160px;
+  left: 0;
+}
+.banner .img8 {
+  display: inline-block;
+  position: absolute;
+  top: 250px;
+  right: 0;
+}
+.banner .img9 {
+  display: inline-block;
+  position: absolute;
+  top: 300px;
+  left: 630px;
 }
 .banner .btnGroup {
   width: 100%;
