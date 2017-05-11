@@ -607,12 +607,14 @@ template {
   width: 1000px;
   height: 450px;
   position: relative;
+  overflow: hidden;
 }
 .project .public .mainbox .nav {
   width: 19px;
   height: 400px;
   top: 20px;
   position: absolute;
+  z-index: 2;
   background: url(../img/chanpin_nowline_bgline.png) no-repeat;
   background-repeat: repeat-y;
   background-position-x: 10px;
@@ -634,6 +636,9 @@ template {
   height: 19px;
   background: url(../img/chanpin_nowline_daquan.png);
 }
+.project .public .mainbox .nav span:hover {
+  cursor: pointer;
+}
 .project .public .mainbox .btn-group {
   height: 29px;
   background-image: url(../img/next&prev_line.png);
@@ -643,6 +648,7 @@ template {
   position: absolute;
   top: 210px;
   left: 460px;
+  z-index: 3;
 }
 .project .public .mainbox .btn-group span {
   width: 29px;
