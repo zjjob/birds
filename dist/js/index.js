@@ -102,10 +102,54 @@ $(function(){
 //产品
 $(function(){
     var index=0;
+    var i=$(".project .public .mainbox .nav span").length;
     $(".project .public .mainbox .btn-group .left").click(function(){
-        alert(1);
+        index--;
+        if(index<0){
+        	index=i-1;
+        }
+        leftchange();
+        console.log(index);
     });
      $(".project .public .mainbox .btn-group .right").click(function(){
-        alert(1);
+        index++;
+        if(index>i-1){
+        	index=0;
+        }
+        rightchange();
     });
+    $(".project .public .mainbox .nav span").click(function(){
+    	var k=$(this).index();
+    	//判断想那边移动
+    	if(k>index){
+    		index=k;
+    		rightchange();
+    	}
+    	else if(k<index){
+    		index=k;
+    		leftchange();
+    	}
+    });
+    function leftchange(){
+    	$(".project .public .mainbox .count"+index).css({left:1000});
+    	navspan();
+    }
+    function rightchange(){
+    	$(".project .public .mainbox .count"+index).css({left:-1000});
+    	navspan();
+    }
+    //隐藏所有div
+    function clearall(){
+    	$(".project .public .mainbox .count").hide();
+    }
+    //清楚nav span
+    function navspan(){
+    	clearall();
+    	$(".project .public .mainbox .count").stop();
+    	$(".project .public .mainbox .count"+index).show();
+    	$(".project .public .mainbox .count"+index).animate({left:0},1000);
+    	$(".project .public .mainbox .nav span").removeClass("active");
+    	$(".project .public .mainbox .nav span").eq(index).css({width:19,height:19,marginLeft:0}).addClass("active");
+    	$(".project .public .mainbox .nav span").eq(index).siblings().css({width:11,height:11,marginLeft:4});
+    }
 });

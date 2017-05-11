@@ -148,12 +148,13 @@
             width: 1000px;
             height: 450px;
             position: relative;
-            // overflow: hidden;
+            overflow: hidden;
             .nav{
                 width: 19px;
                 height: 400px;
                 top: 20px;
                 position: absolute;
+                z-index: 2;
                 background: url(../img/chanpin_nowline_bgline.png) no-repeat;
                 background-repeat: repeat-y;
                 background-position-x: 10px;
@@ -173,6 +174,9 @@
                         height: 19px;
                         background: url(../img/chanpin_nowline_daquan.png);
                     }
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
             }
             .btn-group{
@@ -185,6 +189,7 @@
                 position: absolute;
                 top: 210px;
                 left: 460px;
+                z-index: 3;
                 span{
                     width: 29px;
                     height: 29px;
