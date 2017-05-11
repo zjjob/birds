@@ -118,3 +118,188 @@
             }
      }
 }
+.project{
+    .public{
+        color: #311759;
+        padding-bottom: 48px;
+        .goon{
+            text-align: center;
+            padding-top: 48px;
+            font-size: 0px;
+            img{
+                width: 58px;
+                height: 58px;
+            }
+        }
+        h1{
+            text-align: center;
+            margin: 60px 0 0 0;
+            font-family: "SimSun";
+        }
+        p{
+            text-align: center;
+            margin-top: 0;
+        }
+        .pointes{
+            text-align: center;
+            padding:20px 0 70px 0;
+        }
+        .mainbox{
+            width: 1000px;
+            height: 450px;
+            position: relative;
+            // overflow: hidden;
+            .nav{
+                width: 19px;
+                height: 400px;
+                top: 20px;
+                position: absolute;
+                background: url(../img/chanpin_nowline_bgline.png) no-repeat;
+                background-repeat: repeat-y;
+                background-position-x: 10px;
+                span{
+                    background: url(../img/chanpin_nowline_xiaoquan.png);
+                    width: 11px;
+                    height: 11px;
+                    display: block;
+                    margin-top: 67px;
+                    margin-left: 4px;
+                    &:first-child{
+                        margin-top: 0;
+                        margin-left: 0;
+                    }
+                    &.active{
+                        width: 19px;
+                        height: 19px;
+                        background: url(../img/chanpin_nowline_daquan.png);
+                    }
+                }
+            }
+            .btn-group{
+                height: 29px;
+                background-image:url(../img/next&prev_line.png);
+                background-repeat: repeat-x;
+                background-position: 10px;
+                width: 540px;
+                // background: yellow;
+                position: absolute;
+                top: 210px;
+                left: 460px;
+                span{
+                    width: 29px;
+                    height: 29px;
+                    display: inline-block;
+                }
+                .left{
+                    background:url(../img/lefticon.png);
+                    float: left;
+                    &:hover{
+                        background:url(../img/lefticonbg.png);
+                        cursor: pointer;
+                    }
+                }
+                .right{
+                    background:url(../img/righticon.png);
+                    float: right;
+                    &:hover{
+                        background:url(../img/righticonbg.png);
+                        cursor: pointer;
+                    }
+                }
+            }
+            .count{
+                width: 100%;
+                height: 450px;
+                padding:0px 30px;
+                position: absolute;
+                .imgbox{
+                    float: left;
+                    padding:0 30px;
+                }
+                .countright{
+                    width:540px;
+                    height: 450px;
+                    float: left;
+                    // background: gray;
+                    .title{
+                            height: 60px;
+                        h3{
+                            margin: 0;
+                            font-family: "SimSun";
+                            background: url('../img/pen_line.png') no-repeat;
+                            height: 60px;
+                            background-repeat:repeat-x;
+                            background-position-y: 59px;
+                            width: 490px;
+                            font-size: 30px;
+                            float: left;
+                        }
+                        span{
+                            display: inline-block;
+                            background:url(../img/pen.png) no-repeat;
+                            width: 50px;
+                            height: 60px;
+                            background-size: 100% 100%;                  
+                            float: right;
+                        }
+                    }
+                    .overview{
+                        padding-left: 10px;
+                        padding-top: 30px;
+                        color: #565559;
+                        img{
+                            width: 96px;
+                            height:96px;
+                            display: block;
+                            float: left;
+                        }
+                        .overviewcount{
+                            width: 420px;
+                            padding-left: 10px;
+                            float: left;
+                            h3{
+                                margin: 0;
+                            }
+                            p{
+                                margin: 0;
+                                font-size: 14px;
+                                text-align: left;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                     .font{
+                            margin-top: 100px;
+                            p{
+                                text-align: left;
+                                font-size: 14px;
+                                margin: 0;
+                                color: #565559;
+                            }
+                        }
+                    .bott{
+                        padding-top: 25px;
+                        .img1{
+                            height:18px;
+                            img{
+                                float: right;
+                                margin-right: 160px;
+                            }
+                        }
+                        .img2{
+                            display: block;
+                            float: right;
+                        }
+                        p{
+                            text-align: right;
+                            margin: 0;
+                            color: #565559;
+                            padding-right: 25px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

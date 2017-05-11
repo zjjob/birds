@@ -99,3 +99,13 @@ $(function(){
     }
     img1play();
 });
+//产品
+$(function(){
+    var index=0;
+    $(".project .public .mainbox .btn-group .left").click(function(){
+        alert(1);
+    });
+     $(".project .public .mainbox .btn-group .right").click(function(){
+        alert(1);
+    });
+});
