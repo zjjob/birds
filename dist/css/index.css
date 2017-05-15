@@ -763,3 +763,237 @@ template {
   padding-right: 25px;
   font-size: 14px;
 }
+.company {
+  width: 100%;
+  height: 923px;
+  background: url(../img/mokuai02_bg.jpg) no-repeat;
+}
+.company .public {
+  color: white;
+}
+.company .public h1 {
+  text-align: center;
+  padding: 60px 0 0 0;
+  font-family: "SimSun";
+  padding-top: 120px;
+  margin: 0;
+}
+.company .public p {
+  text-align: center;
+  margin-top: 10px;
+}
+.company .public .pointes {
+  text-align: center;
+  padding: 20px 0 70px 0;
+}
+.company .public .mainbox {
+  width: 1000px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+}
+.company .public .mainbox .btn-group {
+  height: 29px;
+  background-image: url(../img/next&prev_line.png);
+  background-repeat: repeat-x;
+  background-position: 10px;
+  width: 540px;
+  position: absolute;
+  top: 210px;
+  left: 460px;
+  z-index: 3;
+}
+.company .public .mainbox .btn-group span {
+  width: 29px;
+  height: 29px;
+  display: inline-block;
+}
+.company .public .mainbox .btn-group .left {
+  background: url(../img/lefticon.png);
+  float: left;
+}
+.company .public .mainbox .btn-group .left:hover {
+  background: url(../img/lefticonbg.png);
+  cursor: pointer;
+}
+.company .public .mainbox .btn-group .right {
+  background: url(../img/righticon.png);
+  float: right;
+}
+.company .public .mainbox .btn-group .right:hover {
+  background: url(../img/righticonbg.png);
+  cursor: pointer;
+}
+.company .public .mainbox .count {
+  width: 100%;
+  height: 450px;
+  padding: 0px 30px;
+  position: absolute;
+}
+.company .public .mainbox .count .imgbox {
+  float: left;
+  padding: 0 30px;
+}
+.company .public .mainbox .count .countright {
+  width: 540px;
+  height: 450px;
+  float: left;
+}
+.company .public .mainbox .count .countright .title {
+  height: 60px;
+}
+.company .public .mainbox .count .countright .title h3 {
+  margin: 0;
+  font-family: "SimSun";
+  background: url('../img/pen_line.png') no-repeat;
+  height: 60px;
+  background-repeat: repeat-x;
+  background-position-y: 59px;
+  width: 490px;
+  font-size: 30px;
+  float: left;
+}
+.company .public .mainbox .count .countright .title span {
+  display: inline-block;
+  background: url(../img/pen.png) no-repeat;
+  width: 50px;
+  height: 60px;
+  background-size: 100% 100%;
+  float: right;
+}
+.company .public .mainbox .count .countright .overview {
+  padding-left: 10px;
+  padding-top: 30px;
+  color: #565559;
+}
+.company .public .mainbox .count .countright .overview img {
+  width: 96px;
+  height: 96px;
+  display: block;
+  float: left;
+}
+.company .public .mainbox .count .countright .overview .overviewcount {
+  width: 420px;
+  padding-left: 10px;
+  float: left;
+}
+.company .public .mainbox .count .countright .overview .overviewcount h3 {
+  margin: 0;
+}
+.company .public .mainbox .count .countright .overview .overviewcount p {
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+  line-height: 24px;
+}
+.company .public .mainbox .count .countright .line {
+  width: 100%;
+  height: 2px;
+  margin: 0px;
+  margin-top: 50px;
+  background: url(../img/next&prev_line.png);
+}
+.company .public .mainbox .count .countright .font {
+  margin-top: 50px;
+}
+.company .public .mainbox .count .countright .font p {
+  text-align: left;
+  font-size: 14px;
+  margin: 0;
+  color: #565559;
+  line-height: 24px;
+}
+.company .public .mainbox .count .countright .font p a {
+  color: white;
+}
+.company .public .mainbox .count .countright .bott {
+  padding-top: 25px;
+}
+.company .public .mainbox .count .countright .bott .img1 {
+  height: 18px;
+}
+.company .public .mainbox .count .countright .bott .img1 img {
+  float: right;
+  margin-right: 160px;
+}
+.company .public .mainbox .count .countright .bott .img2 {
+  display: block;
+  float: right;
+}
+.company .public .mainbox .count .countright .bott p {
+  text-align: right;
+  margin: 0;
+  color: #565559;
+  padding-right: 25px;
+  font-size: 14px;
+}
+.scope {
+  background: white;
+}
+.scope .public .imgicon {
+  text-align: center;
+  padding-top: 35px;
+}
+.scope .public h1 {
+  text-align: center;
+  color: #322246;
+  margin-bottom: 0px;
+}
+.scope .public .bus {
+  text-align: center;
+  color: #322246;
+  margin-top: 10px;
+}
+.scope .public .pointes {
+  color: #322246;
+  text-align: center;
+}
+.scope .public .scope1 {
+  padding: 58px 0;
+  background: yellow;
+  border-bottom: 1px dashed gray;
+}
+.scope .public .scope1 .num1 {
+  font-size: 90px;
+  color: gray;
+  font-family: "宋体";
+  padding-right: 40px;
+  float: left;
+}
+.scope .public .scope1 .title {
+  padding-top: 28px;
+  float: left;
+}
+.scope .public .scope1 .imgbox {
+  padding: 0 28px;
+  float: left;
+}
+.scope .public .scope1 .imgbox img {
+  width: 116px;
+  height: 116px;
+  display: block;
+}
+.scope .public .scope1 .title {
+  text-align: right;
+}
+.scope .public .scope1 .title h4 {
+  margin: 0;
+}
+.scope .public .scope1 .count {
+  float: left;
+  padding-top: 28px;
+}
+.scope .public .scope1 .count p {
+  margin: 2px 0;
+}
+.scope .public .scope1 .yes {
+  padding-left: 60px;
+  padding-top: 28px;
+  float: left;
+}
+.scope .public .scope1 .yes span {
+  display: inline-block;
+  width: 67px;
+  height: 67px;
+  background: url(../img/business_zhankaishouqi.png) no-repeat;
+}
