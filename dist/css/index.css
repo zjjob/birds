@@ -928,7 +928,7 @@ template {
   font-size: 14px;
 }
 .scope {
-  background: white;
+  background: #f1f2f6;
 }
 .scope .public .imgicon {
   text-align: center;
@@ -948,52 +948,429 @@ template {
   color: #322246;
   text-align: center;
 }
-.scope .public .scope1 {
+.scope .public .scopebox {
   padding: 58px 0;
-  background: yellow;
   border-bottom: 1px dashed gray;
 }
-.scope .public .scope1 .num1 {
+.scope .public .scopebox .num1 {
   font-size: 90px;
   color: gray;
   font-family: "宋体";
   padding-right: 40px;
   float: left;
 }
-.scope .public .scope1 .title {
+.scope .public .scopebox .title {
   padding-top: 28px;
   float: left;
 }
-.scope .public .scope1 .imgbox {
+.scope .public .scopebox .imgbox {
   padding: 0 28px;
   float: left;
 }
-.scope .public .scope1 .imgbox img {
+.scope .public .scopebox .imgbox img {
   width: 116px;
   height: 116px;
   display: block;
 }
-.scope .public .scope1 .title {
+.scope .public .scopebox .title {
   text-align: right;
 }
-.scope .public .scope1 .title h4 {
+.scope .public .scopebox .title h4 {
   margin: 0;
 }
-.scope .public .scope1 .count {
+.scope .public .scopebox .count {
   float: left;
   padding-top: 28px;
 }
-.scope .public .scope1 .count p {
+.scope .public .scopebox .count p {
   margin: 2px 0;
 }
-.scope .public .scope1 .yes {
+.scope .public .scopebox .yes {
   padding-left: 60px;
   padding-top: 28px;
   float: left;
 }
-.scope .public .scope1 .yes span {
+.scope .public .scopebox .yes span {
   display: inline-block;
   width: 67px;
   height: 67px;
   background: url(../img/business_zhankaishouqi.png) no-repeat;
+}
+.scope .public .scopebox .fontcount {
+  width: 700px;
+  margin: 0 auto;
+  font-size: 14px;
+  text-indent: 6px;
+  padding-top: 40px;
+}
+.team {
+  background: #f1f2f6;
+}
+.team .public {
+  padding-bottom: 35px;
+}
+.team .public .imgicon {
+  text-align: center;
+  padding-top: 35px;
+}
+.team .public h1 {
+  text-align: center;
+  color: #322246;
+  margin-bottom: 0px;
+}
+.team .public .bus {
+  text-align: center;
+  color: #322246;
+  margin-top: 10px;
+}
+.team .public .pointes {
+  color: #322246;
+  text-align: center;
+}
+.team .public .imgbox {
+  position: relative;
+  margin: 80px 0;
+  width: 1000px;
+  height: 188px;
+}
+.team .public .imgbox .imgboxcount {
+  width: 1000px;
+  height: 188px;
+  position: absolute;
+}
+.team .public .imgbox .leftshow {
+  border: 1px solid gray;
+  width: 48%;
+  float: left;
+}
+.team .public .imgbox .leftshow .box1 {
+  text-align: center;
+  width: 156px;
+  margin-top: -75px;
+  color: #322246;
+  float: left;
+  margin-left: 10px;
+}
+.team .public .imgbox .leftshow .box1 .bgimg {
+  width: 156px;
+  height: 156px;
+  background: url(../img/team_img02.png) no-repeat;
+}
+.team .public .imgbox .leftshow .box2 {
+  width: 200px;
+  font-size: 12px;
+  float: left;
+  line-height: 28px;
+  margin-left: 40px;
+  padding: 20px 0;
+}
+.team .public .imgbox .leftshow .box2 .message {
+  height: 40px;
+}
+.team .public .imgbox .leftshow .box2 .message .messageimg {
+  height: 40px;
+  width: 31px;
+  background: #d9d9e1;
+  float: left;
+}
+.team .public .imgbox .leftshow .box2 .message .messageimg span {
+  display: block;
+  width: 21px;
+  height: 21px;
+  background: url(../img/team_contact.png) no-repeat;
+  float: left;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+.team .public .imgbox .leftshow .box2 .message .send {
+  float: left;
+  width: 165px;
+  height: 40px;
+  text-align: center;
+  background: #565559;
+  line-height: 40px;
+  color: #322246;
+}
+.team .public .imgbox .leftshow .box3 {
+  width: 40px;
+  height: 188px;
+  background: #2999d6;
+  float: right;
+}
+.team .public .imgbox .leftshow .box3 div {
+  width: 40px;
+  height: 47px;
+  text-align: center;
+  line-height: 47px;
+}
+.team .public .imgbox .leftshow .box3 div span {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+}
+.team .public .imgbox .leftshow .box3 div span.icon1 {
+  background: url(../img/team_contact.png) no-repeat;
+  background-position-y: -44px;
+}
+.team .public .imgbox .leftshow .box3 div span.icon2 {
+  background: url(../img/team_contact.png) no-repeat;
+  background-position-y: -88px;
+}
+.team .public .imgbox .leftshow .box3 div span.icon3 {
+  background: url(../img/team_contact.png) no-repeat;
+  background-position-y: -138px;
+}
+.team .public .imgbox .leftshow .box3 div span.icon4 {
+  background: url(../img/team_contact.png) no-repeat;
+  background-position-y: -176px;
+}
+.team .public .imgbox .rightshow {
+  border: 1px solid #565559;
+  width: 48%;
+  float: left;
+  margin-left: 30px;
+}
+.team .public .imgbox .rightshow .box1 {
+  text-align: center;
+  width: 156px;
+  margin-top: -75px;
+  color: #322246;
+  float: left;
+  margin-left: 10px;
+}
+.team .public .imgbox .rightshow .box1 .bgimg {
+  width: 156px;
+  height: 156px;
+  background: url(../img/team_img03.png) no-repeat;
+}
+.team .public .imgbox .rightshow .box2 {
+  width: 200px;
+  font-size: 12px;
+  float: left;
+  line-height: 28px;
+  margin-left: 40px;
+  padding: 20px 0;
+}
+.team .public .imgbox .rightshow .box2 .message {
+  height: 40px;
+  margin-top: 30px;
+}
+.team .public .imgbox .rightshow .box2 .message .messageimg {
+  height: 40px;
+  width: 31px;
+  background: #d9d9e1;
+  float: left;
+}
+.team .public .imgbox .rightshow .box2 .message .messageimg span {
+  display: block;
+  width: 21px;
+  height: 21px;
+  background: url(../img/team_contact.png) no-repeat;
+  float: left;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+.team .public .imgbox .rightshow .box2 .message .send {
+  float: left;
+  width: 165px;
+  height: 40px;
+  text-align: center;
+  background: gray;
+  line-height: 40px;
+  color: #322246;
+}
+.team .public .imgbox .rightshow .box3 {
+  width: 40px;
+  height: 188px;
+  background: #2999d6;
+  float: right;
+}
+.team .public .imgbox .rightshow .box3 div {
+  width: 40px;
+  height: 47px;
+  text-align: center;
+  line-height: 47px;
+}
+.team .public .imgbox .rightshow .box3 div span {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+}
+.team .public .imgbox .rightshow .box3 div span.icon1 {
+  background: url(../img/team_contact.png) no-repeat;
+  background-position-y: -44px;
+}
+.team .public .imgbox .rightshow .box3 div span.icon2 {
+  background: url(../img/team_contact.png) no-repeat;
+  background-position-y: -88px;
+}
+.team .public .imgbox .rightshow .box3 div span.icon3 {
+  background: url(../img/team_contact.png) no-repeat;
+  background-position-y: -138px;
+}
+.team .public .imgbox .rightshow .box3 div span.icon4 {
+  background: url(../img/team_contact.png) no-repeat;
+  background-position-y: -176px;
+}
+.team .public .btngroup .btnul {
+  width: 200px;
+  margin: 0 auto;
+}
+.team .public .btngroup .btnul li {
+  display: inline-block;
+}
+.team .public .btngroup .btnul li:nth-child(1) {
+  width: 29px;
+  height: 29px;
+  background: url(../img/lefticon.png) no-repeat;
+}
+.team .public .btngroup .btnul li:nth-child(1):hover {
+  background: url(../img/lefticonbg.png) no-repeat;
+  cursor: pointer;
+}
+.team .public .btngroup .btnul li:nth-child(2) {
+  width: 100px;
+  height: 29px;
+  background-image: url(../img/next&prev_line.png);
+  background-repeat: repeat-x;
+  background-position: 10px;
+}
+.team .public .btngroup .btnul li:nth-child(2) .spans {
+  float: left;
+  border: 1px solid gray;
+  border-radius: 14px;
+  padding: 0 10px;
+  margin-left: 20px;
+  margin-top: 4px;
+  background: white;
+}
+.team .public .btngroup .btnul li:nth-child(2) .spans span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: gray;
+}
+.team .public .btngroup .btnul li:nth-child(2) .spans .active {
+  background: blue;
+}
+.team .public .btngroup .btnul li:nth-child(3) {
+  width: 29px;
+  height: 29px;
+  background: url(../img/righticon.png) no-repeat;
+}
+.team .public .btngroup .btnul li:nth-child(3):hover {
+  background: url(../img/righticonbg.png) no-repeat;
+  cursor: pointer;
+}
+.manbg {
+  width: 100%;
+  height: 31px;
+  background: url(../img/map_topimg.png) no-repeat;
+}
+.Partners .public {
+  padding: 35px 0 100px 0;
+}
+.Partners .public h1 {
+  text-align: center;
+  color: #322246;
+  margin-bottom: 0px;
+}
+.Partners .public .bus {
+  text-align: center;
+  color: #322246;
+  margin-top: 10px;
+}
+.Partners .public .pointes {
+  color: #322246;
+  text-align: center;
+}
+.Partners .public .count {
+  width: 100%;
+}
+.Partners .public .count .pleft {
+  width: 49.8%;
+  border-right: 1px solid gray;
+  float: left;
+  height: 449px;
+}
+.Partners .public .count .pleft h3 {
+  color: #322246;
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+.Partners .public .count .pleft p {
+  text-align: left;
+}
+.Partners .public .count .pleft .showimg1 {
+  list-style: none;
+}
+.Partners .public .count .pleft .showimg1 li {
+  float: left;
+  width: 127px;
+  height: 82px;
+  margin: 18px;
+  cursor: pointer;
+}
+.Partners .public .count .pright {
+  width: 48%;
+  float: right;
+}
+.Partners .public .count .pright h3 {
+  font-size: 30px;
+  color: #322246;
+  margin-bottom: 5px;
+}
+.Partners .public .count .pright h3 span {
+  display: inline-block;
+  height: 16px;
+  font-size: 12px;
+  padding: 5px 10px;
+  border: 1px solid gray;
+  line-height: 14px;
+  border-radius: 14px;
+  margin-left: 350px;
+}
+.Partners .public .count .pright p {
+  text-align: left;
+}
+.Partners .public .count .pright .showimg1 {
+  list-style: none;
+}
+.Partners .public .count .pright .showimg1 li {
+  float: left;
+  width: 127px;
+  height: 82px;
+  margin: 15px;
+  cursor: pointer;
+}
+.Partners .public .count .pright .showimg1 li:nth-child(1) {
+  margin: 0 15px 15px 15px;
+}
+.bbg .public {
+  width: 100%;
+  height: 35px;
+  background: url(../img/hezuo_bottombg.png) no-repeat;
+  background-position-x: 200px;
+}
+.Contact {
+  background: #f1f2f6;
+}
+.Contact .public {
+  padding-top: 60px;
+}
+.Contact .public h1 {
+  text-align: center;
+  color: #322246;
+  margin-bottom: 0px;
+  margin: 0;
+}
+.Contact .public .bus {
+  text-align: center;
+  color: #322246;
+  margin-top: 10px;
+}
+.Contact .public .pointes {
+  color: #322246;
+  text-align: center;
 }
