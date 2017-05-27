@@ -153,3 +153,149 @@ $(function(){
     	$(".project .public .mainbox .nav span").eq(index).siblings().css({width:11,height:11,marginLeft:4});
     }
 });
+//地图
+$(function(){
+   // 百度地图API功能
+    var map = new BMap.Map('allmap');
+    var poi = new BMap.Point(106.523035,29.545208);
+    map.centerAndZoom(poi, 16);
+
+    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+                    '<img src="../img/baidu.jpg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
+                    '地址：北京市海淀区上地十街10号<br/>电话：(010)59928888<br/>简介：百度大厦位于北京市海淀区西二旗地铁站附近，为百度公司综合研发及办公总部。' +
+                  '</div>';
+
+    //创建检索信息窗口对象
+    var searchInfoWindow = null;
+	searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+			title  : "百度大厦",      //标题
+			width  : 290,             //宽度
+			height : 105,              //高度
+			panel  : "panel",         //检索结果面板
+			enableAutoPan : true,     //自动平移
+			searchTypes   :[
+				BMAPLIB_TAB_SEARCH,   //周边检索
+				BMAPLIB_TAB_TO_HERE,  //到这里去
+				BMAPLIB_TAB_FROM_HERE //从这里出发
+			]
+		});
+    var marker = new BMap.Marker(poi); //创建marker对象
+    marker.enableDragging(); //marker可拖拽
+    marker.addEventListener("click", function(e){
+	    searchInfoWindow.open(marker);
+    })
+    map.addOverlay(marker); //在地图中添加marker
+    map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+	marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+	map.disableDragging(); //禁止拖拽
+});
+//scope
+$(function(){
+	var i=1;
+	var x=1;
+	var y=1;
+	$(".scope .public .scopebox .imgbox").hover(function(){
+		$(this).addClass("animated tada");
+	},function(){
+		$(this).removeClass("animated tada");
+	});
+	$('.scope .public .scopebox .yes span').hover(function(){
+		$(this).addClass("animated pulse");
+	},function(){
+		$(this).removeClass("animated pulse");
+	})
+	$('.scope .public .scopebox .yes .span1').click(function(){
+		if(i==1){
+			$(this).animate({backgroundPositionY:-67},500);
+			i++;
+		}
+		else if(i==2){
+			$(this).animate({backgroundPositionY:0},500);
+			i=1;
+		}
+		$('.scope .public .scopebox .fontcount1').slideToggle(500);
+	})
+	$('.scope .public .scopebox .yes .span2').click(function(){
+		if(x==1){
+			$(this).animate({backgroundPositionY:-67},500);
+			x++;
+		}
+		else if(x==2){
+			$(this).animate({backgroundPositionY:0},500);
+			x=1;
+		}
+		$('.scope .public .scopebox .fontcount2').slideToggle(500);
+	})
+	$('.scope .public .scopebox .yes .span3').click(function(){
+		if(y==1){
+			$(this).animate({backgroundPositionY:-67},500);
+			y++;
+		}
+		else if(y==2){
+			$(this).animate({backgroundPositionY:0},500);
+			y=1;
+		}
+		$('.scope .public .scopebox .fontcount3').slideToggle(500);
+	})
+})
+//team
+$(function(){
+	index=0;
+//	var stop=setInterval(leftchange,2000);
+	$(".team .public .btngroup .btnul li").eq(0).click(function(){
+//		clearInterval(stop);
+		index--;
+		if(index<0){
+			index=2;
+		}
+		leftchange();
+	})
+	$(".team .public .btngroup .btnul li").eq(2).click(function(){
+//		clearInterval(stop);
+		index++;
+		if(index>2){
+			index=0;
+		}
+		rightchange();
+	})
+	function leftchange(){
+		$(".team .public .imgbox .move"+index).css({left:1000});
+		change();
+	}
+	function rightchange(){
+		$(".team .public .imgbox .move"+index).css({left:-1000});
+		change();
+	}
+	function change(){
+		$(".team .public .imgbox .imgboxcount").hide();
+		$(".team .public .btngroup .btnul li").eq(1).find("span").removeClass();
+		$(".team .public .imgbox .move"+index).show();
+		$(".team .public .imgbox .move"+index).animate({left:0},1000);
+		$(".team .public .btngroup .btnul li").eq(1).find("span").eq(index).addClass("active");
+	}
+})
+//footer
+$(function() {
+//	$(".footer .public .fontw span #one").attr("preload","auto");
+	$(".footer .public .fontw span").eq(0).click(function(){
+		document.getElementById("one").play();
+	})
+	$(".footer .public .fontw span").eq(1).click(function(){
+		document.getElementById("two").play();
+	})
+	$(".footer .public .fontw span").eq(2).click(function(){
+		document.getElementById("three").play();
+	})
+	$(".footer .public .fontw span").eq(3).click(function(){
+		document.getElementById("four").play();
+	})
+	$(".footer .public .fontw span").eq(4).click(function(){
+		document.getElementById("five").play();
+	})
+	$(".footer .public .fontw span").eq(5).click(function(){
+		document.getElementById("six").play();
+	})
+	$(".footer .public .fontw span").eq(6).click(function(){
+		document.getElementById("seven").play();
+	})
+})

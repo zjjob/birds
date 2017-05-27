@@ -64,7 +64,7 @@ ul {
 .header .public .meau > li .secondmeau > li:hover {
   padding-left: 20px;
   transition: padding-left 3000;
-  background: white;
+  background: #221236;
 }
 .header .public .meau > li .secondmeau > li img {
   margin-top: 10px;
@@ -460,6 +460,40 @@ template {
 [hidden] {
   display: none;
 }
+.footer {
+  width: 100%;
+  height: 348px;
+  background: url(../img/yinyue_bg.jpg) no-repeat;
+}
+.footer .public {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+.footer .public .fontw {
+  width: 325px;
+  margin: 0 auto;
+}
+.footer .public .fontw span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 10px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.footer .public .last {
+  margin-top: 30px;
+  text-align: center;
+  border-top: 1px dashed white;
+  padding: 30px;
+  font-size: 14px;
+  color: white;
+}
 .banner {
   width: 100%;
   color: #322246;
@@ -585,6 +619,7 @@ template {
   text-align: center;
   padding-top: 48px;
   font-size: 0px;
+  cursor: pointer;
 }
 .project .public .goon img {
   width: 58px;
@@ -972,6 +1007,9 @@ template {
   height: 116px;
   display: block;
 }
+.scope .public .scopebox .imgbox img:hover {
+  cursor: pointer;
+}
 .scope .public .scopebox .title {
   text-align: right;
 }
@@ -996,7 +1034,11 @@ template {
   height: 67px;
   background: url(../img/business_zhankaishouqi.png) no-repeat;
 }
+.scope .public .scopebox .yes span:hover {
+  cursor: pointer;
+}
 .scope .public .scopebox .fontcount {
+  display: none;
   width: 700px;
   margin: 0 auto;
   font-size: 14px;
@@ -1038,6 +1080,9 @@ template {
   height: 188px;
   position: absolute;
 }
+.team .public .imgbox .imgboxcount.move0 {
+  z-index: 2;
+}
 .team .public .imgbox .leftshow {
   border: 1px solid gray;
   width: 48%;
@@ -1050,11 +1095,15 @@ template {
   color: #322246;
   float: left;
   margin-left: 10px;
+  cursor: pointer;
 }
 .team .public .imgbox .leftshow .box1 .bgimg {
   width: 156px;
   height: 156px;
   background: url(../img/team_img02.png) no-repeat;
+}
+.team .public .imgbox .leftshow .box1 .active {
+  background: url(../img/team_img01.png) no-repeat;
 }
 .team .public .imgbox .leftshow .box2 {
   width: 200px;
@@ -1137,6 +1186,7 @@ template {
   color: #322246;
   float: left;
   margin-left: 10px;
+  cursor: pointer;
 }
 .team .public .imgbox .rightshow .box1 .bgimg {
   width: 156px;
@@ -1373,4 +1423,236 @@ template {
 .Contact .public .pointes {
   color: #322246;
   text-align: center;
+}
+.Contact .public .wrpa {
+  width: 100%;
+}
+.Contact .public .wrpa .left {
+  padding-top: 35px;
+  width: 650px;
+  float: left;
+}
+.Contact .public .wrpa .left .group1 {
+  width: 250px;
+  float: left;
+}
+.Contact .public .wrpa .left .group1 .lefticon {
+  width: 40px;
+  height: 40px;
+  background: #e7e8ec;
+  float: left;
+}
+.Contact .public .wrpa .left .group1 .lefticon span {
+  display: block;
+  width: 19px;
+  height: 19px;
+  background: url(../img/lianxi_icons.png) no-repeat;
+  float: left;
+  margin-left: 12px;
+  margin-top: 11px;
+}
+.Contact .public .wrpa .left .group1 input[type='text'] {
+  height: 34px;
+  padding-left: 10px;
+}
+.Contact .public .wrpa .left .group2 {
+  width: 250px;
+  float: right;
+}
+.Contact .public .wrpa .left .group2 .lefticon {
+  width: 40px;
+  height: 40px;
+  background: #e7e8ec;
+  float: left;
+}
+.Contact .public .wrpa .left .group2 .lefticon span {
+  display: block;
+  width: 19px;
+  height: 19px;
+  background: url(../img/lianxi_icons.png) no-repeat;
+  background-position: -43px;
+  float: left;
+  margin-left: 12px;
+  margin-top: 11px;
+}
+.Contact .public .wrpa .left .group2 input[type='text'] {
+  height: 34px;
+  padding-left: 10px;
+}
+.Contact .public .wrpa .left .emailbox {
+  width: 626px;
+  height: 150px;
+  border: 1px solid gray;
+  margin-top: 20px;
+}
+.Contact .public .wrpa .left .emailbox .imgshow {
+  width: 50px;
+  height: 150px;
+  background: #e7e8ec;
+  float: left;
+}
+.Contact .public .wrpa .left .emailbox .imgshow span {
+  display: block;
+  width: 19px;
+  height: 19px;
+  background: url(../img/lianxi_icons.png) no-repeat;
+  float: left;
+  margin: 5px 14px;
+}
+.Contact .public .wrpa .left .emailbox textarea {
+  padding-left: 10px;
+  height: 145px;
+  resize: none;
+  width: 562px;
+}
+.Contact .public .wrpa .right {
+  padding-top: 35px;
+  float: left;
+  width: 300px;
+}
+.Contact .public .wrpa .right .group1 {
+  width: 300px;
+}
+.Contact .public .wrpa .right .group1 .lefticon {
+  width: 40px;
+  height: 40px;
+  background: #e7e8ec;
+  float: left;
+}
+.Contact .public .wrpa .right .group1 .lefticon span {
+  display: block;
+  width: 19px;
+  height: 19px;
+  background: url(../img/lianxi_icons.png) no-repeat;
+  background-position: -94px;
+  float: left;
+  margin-left: 12px;
+  margin-top: 11px;
+}
+.Contact .public .wrpa .right .group1 input[type='text'] {
+  height: 34px;
+  padding-left: 10px;
+  width: 243px;
+}
+.Contact .public .wrpa .right .group2 {
+  width: 300px;
+  margin-top: 40px;
+}
+.Contact .public .wrpa .right .group2 .lefticon {
+  width: 40px;
+  height: 40px;
+  background: #2999d6;
+  float: left;
+}
+.Contact .public .wrpa .right .group2 .lefticon span {
+  display: block;
+  width: 19px;
+  height: 19px;
+  background: url(../img/lianxi_icons.png) no-repeat;
+  background-position: -43px;
+  float: left;
+  margin-left: 12px;
+  margin-top: 11px;
+}
+.Contact .public .wrpa .right .group2 input[type='button'] {
+  height: 40px;
+  width: 260px;
+  background: #168bcb;
+  border: none;
+  color: white;
+}
+.Contact .public .wrpa .right .group2 input[type='button']:hover {
+  background: #2999d6;
+  cursor: pointer;
+}
+.Contact .public .group3 {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+.Contact .public .group3 .addresbox {
+  width: 330px;
+  float: left;
+}
+.Contact .public .group3 .addresbox .addressimg {
+  width: 101px;
+  height: 101px;
+  float: left;
+  cursor: pointer;
+}
+.Contact .public .group3 .addresbox .count {
+  padding-left: 10px;
+  float: left;
+}
+.Contact .public .group3 .addresbox .count h3 {
+  margin: 0 0 14px 0;
+}
+.Contact .public .group3 .addresbox .count .line {
+  width: 210px;
+  height: 7px;
+  background: url(../img/lianxi_kuaier_bg.png) no-repeat;
+}
+.Contact .public .group3 .addresbox .count p {
+  font-size: 12px;
+}
+.Contact .public .group3 .texbox {
+  width: 330px;
+  float: left;
+}
+.Contact .public .group3 .texbox .addressimg {
+  width: 101px;
+  height: 101px;
+  float: left;
+  cursor: pointer;
+}
+.Contact .public .group3 .texbox .count {
+  padding-left: 10px;
+  float: left;
+}
+.Contact .public .group3 .texbox .count h3 {
+  margin: 0 0 14px 0;
+}
+.Contact .public .group3 .texbox .count .line {
+  width: 210px;
+  height: 7px;
+  background: url(../img/lianxi_kuaier_bg.png) no-repeat;
+}
+.Contact .public .group3 .texbox .count p {
+  font-size: 12px;
+}
+.Contact .public .group3 .interbox {
+  width: 330px;
+  float: left;
+}
+.Contact .public .group3 .interbox .addressimg {
+  width: 101px;
+  height: 101px;
+  float: left;
+  cursor: pointer;
+}
+.Contact .public .group3 .interbox .count {
+  padding-left: 10px;
+  float: left;
+}
+.Contact .public .group3 .interbox .count h3 {
+  margin: 0 0 14px 0;
+}
+.Contact .public .group3 .interbox .count .line {
+  width: 210px;
+  height: 7px;
+  background: url(../img/lianxi_kuaier_bg.png) no-repeat;
+}
+.Contact .public .group3 .interbox .count p {
+  font-size: 12px;
+}
+#allmap {
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+#allmap .bottombg {
+  position: absolute;
+  width: 100%;
+  height: 33px;
+  bottom: 0px;
+  z-index: 2;
 }

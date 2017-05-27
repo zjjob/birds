@@ -1,5 +1,6 @@
 @import 'header';
 @import 'normalize';
+@import "footer";
 .banner{
     width: 100%;
     color:#322246;
@@ -126,6 +127,7 @@
             text-align: center;
             padding-top: 48px;
             font-size: 0px;
+            cursor:pointer;
             img{
                 width: 58px;
                 height: 58px;
@@ -516,6 +518,9 @@
                     width: 116px;
                     height: 116px;
                     display: block;
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
             }
             .title{
@@ -540,9 +545,13 @@
                     width:67px;
                     height: 67px;
                     background: url(../img/business_zhankaishouqi.png) no-repeat;
-                }   
+                    &:hover{
+                        cursor: pointer;
+                    }   
+                }
             }
             .fontcount{
+                display: none;
                 width: 700px;
                 margin: 0 auto;
                 font-size: 14px;
@@ -580,6 +589,9 @@
                 width: 1000px;
                 height: 188px;
                 position: absolute;
+                &.move0{
+                    z-index: 2;
+                }
             }
             margin: 80px 0;
             width: 1000px;
@@ -595,10 +607,14 @@
                     color: #322246;
                     float: left;
                     margin-left: 10px;
+                    cursor: pointer;
                     .bgimg{
                         width: 156px;
                         height: 156px;
                         background: url(../img/team_img02.png) no-repeat;
+                    }
+                    .active{
+                        background: url(../img/team_img01.png) no-repeat;
                     }
                 }
                 .box2{
@@ -682,6 +698,7 @@
                     color: #322246;
                     float: left;
                     margin-left: 10px;
+                    cursor: pointer;
                     .bgimg{
                         width: 156px;
                         height: 156px;
@@ -927,5 +944,241 @@
             color:#322246;
             text-align: center;
         }
+        .wrpa{
+            width: 100%;
+            .left{
+                padding-top: 35px;
+                width: 650px;
+                float: left;
+                // background: yellow;
+               .group1{
+                   width: 250px;
+                   float: left;
+                   .lefticon{
+                        width: 40px;
+                        height: 40px;
+                        background:#e7e8ec;
+                        float: left;
+                            span{
+                            display: block;
+                            width: 19px;
+                            height: 19px;
+                            background: url(../img/lianxi_icons.png) no-repeat; 
+                            float: left; 
+                            margin-left: 12px;
+                            margin-top: 11px;
+                        }
+                   }
+                   input[type='text']{
+                       height: 34px;
+                       padding-left: 10px;
+                   }
+               }
+               .group2{
+                   width: 250px;
+                   float: right;
+                   .lefticon{
+                        width: 40px;
+                        height: 40px;
+                        background:#e7e8ec;
+                        float: left;
+                            span{
+                            display: block;
+                            width: 19px;
+                            height: 19px;
+                            background: url(../img/lianxi_icons.png) no-repeat;
+                            background-position: -43px; 
+                            float: left; 
+                            margin-left: 12px;
+                            margin-top: 11px;
+                        }
+                   }
+                   input[type='text']{
+                       height: 34px;
+                       padding-left: 10px;
+                   }
+               }
+               .emailbox{
+                   width: 626px;
+                   height: 150px;
+                   border: 1px solid gray;
+                   margin-top: 20px;
+                   .imgshow{
+                       width: 50px;
+                       height: 150px;
+                       background:#e7e8ec; 
+                       float: left;
+                       span{
+                            display: block;
+                            width: 19px;
+                            height: 19px;
+                            background: url(../img/lianxi_icons.png) no-repeat;
+                            float: left;
+                            margin: 5px 14px;
+                       }
+                   }
+                   textarea{
+                       padding-left: 10px;
+                       height: 145px;
+                       resize: none;
+                       width: 562px;
+                   }
+               }
+            }
+            .right{
+                padding-top: 35px;
+                float: left;
+                width: 300px;
+                .group1{
+                   width: 300px;
+                   .lefticon{
+                        width: 40px;
+                        height: 40px;
+                        background:#e7e8ec;
+                        float: left;
+                            span{
+                            display: block;
+                            width: 19px;
+                            height: 19px;
+                            background: url(../img/lianxi_icons.png) no-repeat; 
+                            background-position: -94px;
+                            float: left; 
+                            margin-left: 12px;
+                            margin-top: 11px;
+                        }
+                   }
+                   input[type='text']{
+                       height: 34px;
+                       padding-left: 10px;
+                       width: 243px;
+                   }
+               }
+                .group2{
+                   width: 300px;
+                   margin-top: 40px;
+                   .lefticon{
+                        width: 40px;
+                        height: 40px;
+                        background:#2999d6;
+                        float: left;
+                            span{
+                            display: block;
+                            width: 19px;
+                            height: 19px;
+                            background: url(../img/lianxi_icons.png) no-repeat;
+                            background-position: -43px; 
+                            float: left; 
+                            margin-left: 12px;
+                            margin-top: 11px;
+                        }
+                   }
+                   input[type='button']{
+                       height: 40px;
+                       width: 260px;
+                       background: #168bcb;
+                       border: none;
+                       color: white;
+                       &:hover{
+                           background:#2999d6;
+                           cursor: pointer;
+                       }
+                   }
+               }
+            }
+        }
+        .group3{
+            padding-top: 50px;
+            padding-bottom: 60px;
+            .addresbox{
+                width: 330px;
+                float: left;
+                .addressimg{
+                    width:101px;
+                    height: 101px;
+                    float: left;
+                    cursor: pointer;
+                }
+                .count{
+                    padding-left: 10px;
+                    float:left;
+                    h3{
+                        margin: 0 0 14px 0;
+                    }
+                        .line{
+                        width: 210px;
+                        height: 7px;
+                        background: url(../img/lianxi_kuaier_bg.png) no-repeat;
+                        // background-size: 7px 210px;
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .texbox{
+                width: 330px;
+                float: left;
+                .addressimg{
+                    width:101px;
+                    height: 101px;
+                    float: left;
+                    cursor: pointer;
+                }
+                .count{
+                    padding-left: 10px;
+                    float:left;
+                    h3{
+                        margin: 0 0 14px 0;
+                    }
+                        .line{
+                        width: 210px;
+                        height: 7px;
+                        background: url(../img/lianxi_kuaier_bg.png) no-repeat;
+                        // background-size: 7px 210px;
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .interbox{
+                width: 330px;
+                float: left;
+                .addressimg{
+                    width:101px;
+                    height: 101px;
+                    float: left;
+                    cursor: pointer;
+                }
+                .count{
+                    padding-left: 10px;
+                    float:left;
+                    h3{
+                        margin: 0 0 14px 0;
+                    }
+                        .line{
+                        width: 210px;
+                        height: 7px;
+                        background: url(../img/lianxi_kuaier_bg.png) no-repeat;
+                        // background-size: 7px 210px;
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+#allmap{
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+    .bottombg{
+        position: absolute;
+        width: 100%;
+        height: 33px;
+        bottom: 0px;
+        z-index: 2;
     }
 }
